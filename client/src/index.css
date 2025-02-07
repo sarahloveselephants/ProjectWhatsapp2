@@ -8,6 +8,7 @@
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased bg-[#FDFBF7] text-foreground;
+    font-family: 'Inter', sans-serif;
   }
 }

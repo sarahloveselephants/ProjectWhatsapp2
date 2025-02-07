@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SiWhatsapp } from 'react-icons/si';
 import {
   Sheet,
   SheetContent,
@@ -11,18 +12,19 @@ import { cn } from "@/lib/utils";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Resources", href: "/resources" },
-  { name: "About", href: "/about" },
+  { name: "Get Involved", href: "#get-involved" },
 ];
 
 export default function Navbar() {
   const [location] = useLocation();
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="sticky top-0 z-50 w-full border-b bg-[#FDFBF7]/95 backdrop-blur supports-[backdrop-filter]:bg-[#FDFBF7]/60">
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="text-xl font-bold">Project WhatsApp</span>
+            <SiWhatsapp className="h-6 w-6 text-[#25D366]" />
+            <span className="text-xl font-bold text-[#1E4620]">Project WhatsApp</span>
           </Link>
           <div className="flex gap-6">
             {navigation.map((item) => (
@@ -30,9 +32,9 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
+                  "text-sm font-medium transition-colors hover:text-[#1E4620]",
                   location === item.href
-                    ? "text-foreground"
+                    ? "text-[#1E4620]"
                     : "text-muted-foreground"
                 )}
               >
@@ -55,9 +57,9 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
+                    "text-sm font-medium transition-colors hover:text-[#1E4620]",
                     location === item.href
-                      ? "text-foreground"
+                      ? "text-[#1E4620]"
                       : "text-muted-foreground"
                   )}
                 >
