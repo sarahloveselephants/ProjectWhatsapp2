@@ -9,6 +9,13 @@ export default function Home() {
       <section className="flex-1 py-20 md:py-32">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+            <div className="flex items-center justify-center">
+              <img
+                alt="Product preview"
+                className="aspect-square overflow-hidden rounded-xl object-cover object-center"
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+              />
+            </div>
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
@@ -26,13 +33,6 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <img
-                alt="Product preview"
-                className="aspect-square overflow-hidden rounded-xl object-cover object-center"
-                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
-              />
             </div>
           </div>
         </div>
@@ -58,19 +58,6 @@ export default function Home() {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-              </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="p-8 bg-white rounded-xl shadow-lg">
-                <h3 className="text-xl font-semibold text-[#1E4620] mb-4">
-                  Key Features
-                </h3>
-                <ul className="space-y-3 text-[#1E4620]/80">
-                  <li>• Enhanced Communication Tools</li>
-                  <li>• Business Integration</li>
-                  <li>• Advanced Analytics</li>
-                  <li>• Seamless Experience</li>
-                </ul>
               </div>
             </div>
           </div>
