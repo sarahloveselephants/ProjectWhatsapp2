@@ -5,52 +5,19 @@ import { Link } from "wouter";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-[#FDFBF7]">
-      {/* Hero Section */}
-      <section className="flex-1 py-20 md:py-32">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-            <div className="flex items-center justify-center">
-              <img
-                alt="Product preview"
-                className="aspect-square overflow-hidden rounded-xl object-cover object-center"
-                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
-              />
-            </div>
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Transform Your WhatsApp Experience
-                </h1>
-                <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Join thousands of users revolutionizing their WhatsApp communication with our innovative platform.
-                </p>
-              </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href="#get-involved">
-                  <Button size="lg">
-                    Get Started
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Section */}
       <section className="flex-1 py-20 md:py-32">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+            <div className="flex flex-col justify-center">
+              <h1 className="text-3xl font-bold tracking-tighter text-[#1E4620] sm:text-5xl xl:text-6xl/none">
+                About Our Project
+              </h1>
+            </div>
             <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter text-[#1E4620] sm:text-5xl xl:text-6xl/none">
-                  About Our Project
-                </h1>
-                <p className="max-w-[600px] text-[#1E4620]/80 md:text-xl">
-                  Revolutionizing WhatsApp communication with innovative solutions that empower users and businesses alike.
-                </p>
-              </div>
+              <p className="text-[#1E4620]/80 md:text-xl">
+                Revolutionizing WhatsApp communication with innovative solutions that empower users and businesses alike.
+              </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/about">
                   <Button size="lg" className="bg-[#1E4620] hover:bg-[#1E4620]/90">
