@@ -1,9 +1,30 @@
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
-import { useQuery } from "@tanstack/react-query";
+import { FileText, Book, FileImage } from "lucide-react";
+
+const documentResources = [
+  {
+    title: "Project WhatsApp Guide",
+    type: "PDF",
+    description: "Comprehensive guide about our WhatsApp solutions",
+    path: "/docs/whatsapp-guide.pdf",
+    icon: FileText
+  },
+  {
+    title: "Integration Manual",
+    type: "PDF",
+    description: "Technical documentation for WhatsApp integration",
+    path: "/docs/integration-manual.pdf",
+    icon: Book
+  },
+  {
+    title: "Feature Overview",
+    type: "PDF",
+    description: "Overview of all available features",
+    path: "/docs/feature-overview.pdf",
+    icon: FileText
+  }
+];
 
 const resources = [
   {
@@ -24,39 +45,6 @@ const resources = [
 ];
 
 export default function Resources() {
-  const { toast } = useToast();
-  const [uploading, setUploading] = useState(false);
-
-  const { data: uploadedFiles = [], refetch: refetchFiles } = useQuery({
-    queryKey: ['/api/files'],
-  });
-
-  const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (!file) return;
-
-    const formData = new FormData();
-    formData.append('file', file);
-
-    setUploading(true);
-    try {
-      await apiRequest('POST', '/api/upload', formData);
-      toast({
-        title: "Success",
-        description: "File uploaded successfully",
-      });
-      refetchFiles();
-    } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: error instanceof Error ? error.message : "Failed to upload file",
-      });
-    } finally {
-      setUploading(false);
-    }
-  };
-
   return (
     <div className="container py-10">
       <div className="space-y-2 text-center mb-10">
@@ -68,68 +56,56 @@ export default function Resources() {
         </p>
       </div>
 
-      {/* File Upload Section */}
-      <div className="mb-8 p-4 border rounded-lg">
-        <h2 className="text-xl font-semibold mb-4">Upload Resources</h2>
-        <div className="flex items-center gap-4">
-          <input
-            type="file"
-            accept=".pdf,.jpg,.jpeg,.png"
-            onChange={handleFileUpload}
-            className="hidden"
-            id="file-upload"
-          />
-          <label htmlFor="file-upload">
-            <Button variant="outline" disabled={uploading} asChild>
-              <span>{uploading ? "Uploading..." : "Choose File"}</span>
-            </Button>
-          </label>
-          <p className="text-sm text-gray-500">
-            Supported formats: PDF, JPG, PNG
-          </p>
+      {/* PDF Documents Section */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-semibold mb-6">Documentation</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {documentResources.map((doc) => (
+            <Card key={doc.title} className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <doc.icon className="h-8 w-8 text-[#1E4620]" />
+                  <div className="flex-1">
+                    <h3 className="font-semibold mb-2">{doc.title}</h3>
+                    <p className="text-sm text-muted-foreground mb-4">{doc.description}</p>
+                    <a
+                      href={doc.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                    >
+                      <Button variant="outline" size="sm">
+                        View {doc.type}
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
 
-      {/* Uploaded Files Section */}
-      {uploadedFiles.length > 0 && (
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Uploaded Resources</h2>
-          <div className="grid gap-4">
-            {uploadedFiles.map((fileName: string) => (
-              <Card key={fileName}>
-                <CardContent className="p-4">
-                  <a
-                    href={`/uploads/${fileName}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    {fileName}
-                  </a>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      )}
-
       {/* Featured Resources */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {resources.map((resource) => (
-          <Card key={resource.title} className="overflow-hidden">
-            <img
-              src={resource.image}
-              alt={resource.title}
-              className="w-full h-48 object-cover"
-            />
-            <CardHeader>
-              <CardTitle>{resource.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">{resource.description}</p>
-            </CardContent>
-          </Card>
-        ))}
+      <div className="mt-16">
+        <h2 className="text-2xl font-semibold mb-6">Featured Resources</h2>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {resources.map((resource) => (
+            <Card key={resource.title} className="overflow-hidden">
+              <img
+                src={resource.image}
+                alt={resource.title}
+                className="w-full h-48 object-cover"
+              />
+              <CardHeader>
+                <CardTitle>{resource.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{resource.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );
