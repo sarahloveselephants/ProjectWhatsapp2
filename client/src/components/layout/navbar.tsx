@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { SiWhatsapp } from "react-icons/si";
 import { Search } from "lucide-react";
 import { cn } from "@/lib/utils";
