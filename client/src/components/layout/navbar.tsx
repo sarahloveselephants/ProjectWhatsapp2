@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Resources", href: "/resources" },
-  { name: "Get Involved", href: "#get-involved" },
+  { name: "About", href: "/about" },
 ];
 
 export default function Navbar() {
@@ -23,9 +23,9 @@ export default function Navbar() {
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // For now, we'll just console.log the search query
-    // You can implement the actual search functionality based on your requirements
-    console.log("Searching for:", searchQuery);
+    if (searchQuery.trim()) {
+      setLocation(`/resources?search=${encodeURIComponent(searchQuery.trim())}`);
+    }
   };
 
   return (
@@ -59,12 +59,15 @@ export default function Navbar() {
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
-              placeholder="Search..."
+              placeholder="Search resources..."
               className="pl-9 bg-white"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
+          <Button type="submit" variant="outline" size="icon">
+            <Search className="h-4 w-4" />
+          </Button>
         </form>
 
         <Sheet>

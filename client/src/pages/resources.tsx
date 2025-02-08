@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText, Book, FileImage } from "lucide-react";
+import { FileText, Book } from "lucide-react";
+import { useLocation } from "wouter";
 
 const documentResources = [
   {
@@ -26,25 +27,18 @@ const documentResources = [
   }
 ];
 
-const resources = [
-  {
-    title: "Getting Started Guide",
-    description: "Learn the basics of using our platform",
-    image: "https://images.unsplash.com/photo-1559752562-1513aa167782"
-  },
-  {
-    title: "Best Practices",
-    description: "Optimize your WhatsApp communication",
-    image: "https://images.unsplash.com/photo-1653389526309-f8e2e75f8aaf"
-  },
-  {
-    title: "Case Studies",
-    description: "See how others are using our platform",
-    image: "https://images.unsplash.com/photo-1653389527532-884074ac1c65"
-  }
-];
-
 export default function Resources() {
+  const [location] = useLocation();
+  const searchParams = new URLSearchParams(location.split('?')[1]);
+  const searchQuery = searchParams.get('search')?.toLowerCase() || '';
+
+  const filteredDocs = documentResources.filter(doc => 
+    searchQuery ? 
+      doc.title.toLowerCase().includes(searchQuery) || 
+      doc.description.toLowerCase().includes(searchQuery)
+    : true
+  );
+
   return (
     <div className="container py-10">
       <div className="space-y-2 text-center mb-10">
@@ -60,7 +54,7 @@ export default function Resources() {
       <div className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">Documentation</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {documentResources.map((doc) => (
+          {filteredDocs.map((doc) => (
             <Card key={doc.title} className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
@@ -84,28 +78,11 @@ export default function Resources() {
             </Card>
           ))}
         </div>
-      </div>
-
-      {/* Featured Resources */}
-      <div className="mt-16">
-        <h2 className="text-2xl font-semibold mb-6">Featured Resources</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {resources.map((resource) => (
-            <Card key={resource.title} className="overflow-hidden">
-              <img
-                src={resource.image}
-                alt={resource.title}
-                className="w-full h-48 object-cover"
-              />
-              <CardHeader>
-                <CardTitle>{resource.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{resource.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        {filteredDocs.length === 0 && (
+          <p className="text-center text-muted-foreground mt-8">
+            No resources found matching your search.
+          </p>
+        )}
       </div>
     </div>
   );
