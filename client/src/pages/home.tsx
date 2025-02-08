@@ -16,7 +16,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-center space-y-4">
               <p className="text-[#1E4620]/80 md:text-xl">
-                Revolutionizing WhatsApp communication with innovative solutions that empower users and businesses alike.
+                Project Whatsapp is a youth-led community project dedicated to improving digital literacy among seniors by teaching them how to effectively use WhatsApp. Through interactive workshops and customized materials, we empower seniors to stay connected with their families, friends, and communities
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/about">
@@ -40,7 +40,7 @@ export default function Home() {
                 Resources
               </h2>
               <p className="max-w-[900px] text-[#1E4620]/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Discover our comprehensive collection of guides, tutorials, and best practices
+                We provide free teaching slides on WhatsApp in English, Chinese, and bilingual formats, along with Apple Notes and Settings teaching slides in English. Additionally, we offer a comprehensive WhatsApp guidebook for both Apple and Android devices, available in English and bilingual versions, to support seniors in their learning journey
               </p>
               <div className="mt-6">
                 <Link href="/resources">
@@ -64,16 +64,30 @@ export default function Home() {
                 Get Involved
               </h2>
               <p className="max-w-[600px] text-[#1E4620]/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Join our community and help shape the future of WhatsApp communication
+                Explore various opportunities to support Project Whatsapp and make a difference in bridging the digital divide in our community.
               </p>
-              <div className="mt-6 flex flex-col gap-4 items-center">
-                <p className="text-[#1E4620]/80">
-                  Connect with us on social media or contribute to our open-source projects
-                </p>
-                <Button size="lg" className="bg-[#1E4620] hover:bg-[#1E4620]/90">
-                  Join Our Community
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+              <div className="mt-12 grid gap-8 md:grid-cols-3">
+                <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
+                  <h3 className="text-xl font-semibold mb-4">Volunteer</h3>
+                  <p className="text-[#1E4620]/80 text-center mb-6">
+                    Assist during our workshops to guide seniors as they learn WhatsApp features and build digital confidence
+                  </p>
+                  <Button variant="outline" className="w-full">Learn More</Button>
+                </div>
+                <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
+                  <h3 className="text-xl font-semibold mb-4">Collaborate</h3>
+                  <p className="text-[#1E4620]/80 text-center mb-6">
+                    Partner with us to expand our reach and help bridge the digital divide in your community.
+                  </p>
+                  <Button variant="outline" className="w-full">Contact Us</Button>
+                </div>
+                <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
+                  <h3 className="text-xl font-semibold mb-4">Sign Up</h3>
+                  <p className="text-[#1E4620]/80 text-center mb-6">
+                    Sign up your community group or organization for a tailored workshop to empower members with essential digital skills
+                  </p>
+                  <Button variant="outline" className="w-full">Register Now</Button>
+                </div>
               </div>
             </div>
           </div>
