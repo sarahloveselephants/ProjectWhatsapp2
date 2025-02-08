@@ -9,6 +9,10 @@
 
   body {
     @apply font-sans antialiased bg-[#FDFBF7] text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Inter', system-ui, sans-serif;
   }
 }
