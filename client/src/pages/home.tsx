@@ -13,6 +13,7 @@ export default function Home() {
               <h1 className="text-3xl font-bold tracking-tighter text-[#1E4620] sm:text-5xl xl:text-6xl/none">
                 About Our Project
               </h1>
+              <h2 className="mt-4 text-xl text-[#1E4620]/80">Our Mission</h2>
             </div>
             <div className="flex flex-col justify-center space-y-4">
               <p className="text-[#1E4620]/80 md:text-xl">

@@ -3,6 +3,7 @@ import { Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { SiWhatsapp } from 'react-icons/si';
+import { useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -17,7 +18,15 @@ const navigation = [
 ];
 
 export default function Navbar() {
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // For now, we'll just console.log the search query
+    // You can implement the actual search functionality based on your requirements
+    console.log("Searching for:", searchQuery);
+  };
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-[#FDFBF7]/95 backdrop-blur supports-[backdrop-filter]:bg-[#FDFBF7]/60">
@@ -46,15 +55,17 @@ export default function Navbar() {
         </div>
 
         {/* Search Bar */}
-        <div className="hidden md:flex items-center gap-2 max-w-sm flex-1 mx-4">
+        <form onSubmit={handleSearch} className="hidden md:flex items-center gap-2 max-w-sm flex-1 mx-4">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               placeholder="Search..."
               className="pl-9 bg-white"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
-        </div>
+        </form>
 
         <Sheet>
           <SheetTrigger asChild className="md:hidden">
