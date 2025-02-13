@@ -21,13 +21,13 @@ export default function About() {
             <span className="text-[#1E4620] text-2xl font-semibold">01</span>
             <h2 className="text-3xl font-bold text-[#1E4620]">Who are we?</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex-1">
               <p className="text-gray-600 leading-relaxed">
                 We are Nicole and Sarah, the founders of the VIA WhatsApp Project. We started this initiative in April 2024 while we were students at Methodist Girls' School (Secondary) MGS. After graduating in 2024, we both moved on to junior college and are committed to continuing this meaningful project. We are fortunate to still have the support of Mr. Wang, the teacher in charge of the Intergenerational Learning Centre (IGL) at MGS, who has been instrumental in guiding us along the way.
               </p>
             </div>
-            <div className="bg-gray-100 rounded-lg p-4 text-center">
+            <div className="w-full md:w-1/2 bg-gray-100 rounded-lg p-4">
               [Photo Space]
             </div>
           </div>

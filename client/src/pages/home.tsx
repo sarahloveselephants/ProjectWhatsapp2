@@ -19,7 +19,7 @@ export default function Home() {
             <p className="text-lg mb-8">
               Project Whatsapp is a youth-led community project dedicated to improving digital literacy among seniors by teaching them how to effectively use WhatsApp. Through interactive workshops and customized materials, we empower seniors to stay connected with their families, friends, and communities.
             </p>
-            <Link href="/about">
+            <Link href="/work">
               <Button className="bg-[#0E3410] hover:bg-[#0E3410]/90 text-white">
                 Learn More
               </Button>
