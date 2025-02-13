@@ -1,50 +1,80 @@
-import { Card, CardContent } from "@/components/ui/card";
 
-const team = [
-  {
-    name: "Innovation",
-    description: "Pushing boundaries in WhatsApp communication",
-    image: "https://images.unsplash.com/photo-1455849318743-b2233052fcff"
-  },
-  {
-    name: "Collaboration",
-    description: "Working together to create better solutions",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978"
-  },
-  {
-    name: "Vision",
-    description: "Building the future of messaging",
-    image: "https://images.unsplash.com/photo-1504805572947-34fad45aed93"
-  }
-];
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
   return (
-    <div className="container py-10">
-      <div className="space-y-2 text-center mb-10">
-        <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          About Us
+    <div className="container py-10 max-w-6xl mx-auto">
+      {/* Header Section */}
+      <div className="space-y-4 text-center mb-16">
+        <h1 className="text-4xl font-bold tracking-tighter text-[#1E4620] sm:text-5xl">
+          Our Work
         </h1>
-        <p className="text-gray-500 md:text-xl dark:text-gray-400 max-w-3xl mx-auto">
-          We're on a mission to revolutionize how people and businesses communicate through WhatsApp
+        <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+          We conduct WhatsApp workshops specifically designed for the elderly, helping them build digital confidence and stay connected in today's fast-paced world. Our sessions range from teaching simple functions like sending messages, making video calls, and sharing photos to more advanced features such as location sharing, creating groups, and exploring WhatsApp Channels.
         </p>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-12">
-        {team.map((member) => (
-          <Card key={member.name} className="overflow-hidden">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-full h-48 object-cover"
-            />
-            <CardContent className="pt-6">
-              <h3 className="text-lg font-semibold mb-2">{member.name}</h3>
-              <p className="text-muted-foreground">{member.description}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+      {/* Who Are We Section */}
+      <Card className="mb-16 border-none shadow-lg bg-[#FDFBF7]">
+        <CardContent className="p-8">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-[#1E4620] text-2xl font-semibold">01</span>
+            <h2 className="text-3xl font-bold text-[#1E4620]">Who are we?</h2>
+          </div>
+          <p className="text-gray-600 leading-relaxed">
+            We are Nicole and Sarah, the founders of the VIA WhatsApp Project. We started this initiative in April 2024 while we were students at Methodist Girls' School (Secondary) MGS. After graduating in 2024, we both moved on to junior college and are committed to continuing this meaningful project. We are fortunate to still have the support of Mr. Wang, the teacher in charge of the Intergenerational Learning Centre (IGL) at MGS, who has been instrumental in guiding us along the way.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Workshop Details Section */}
+      <Card className="border-none shadow-lg bg-[#FDFBF7]">
+        <CardContent className="p-8">
+          <div className="flex items-center gap-2 mb-6">
+            <span className="text-[#1E4620] text-2xl font-semibold">02</span>
+            <h2 className="text-3xl font-bold text-[#1E4620]">Workshop details</h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div>
+                <h3 className="font-semibold text-[#1E4620] mb-2">Duration</h3>
+                <p className="text-gray-600">1-2 hours depending on the group's needs.</p>
+              </div>
+              
+              <div>
+                <h3 className="font-semibold text-[#1E4620] mb-2">Content</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Includes basic messaging and video calls to more advanced features like location sharing and channels. (See full content in our 'resource' page)</li>
+                  <li>• We have slides prepared in english, chinese and both (bilingual)</li>
+                  <li>• Slides can be modified based on the needs of the beneficiary</li>
+                  <li>• We will stay as updated as possible with whatsapp latest features</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="font-semibold text-[#1E4620] mb-2">Dates</h3>
+                <p className="text-gray-600">We connect with our beneficiary and select the best date for both parties</p>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold text-[#1E4620] mb-2">Manpower</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• Each session is led by either Nicole or Sarah</li>
+                <li>• We also have dedicated volunteers who assist by addressing individual questions from the elderly participants</li>
+                <li>• The number of volunteers varies depending on the size of the group, ensuring that each attendee receives the support and guidance they need during the session</li>
+              </ul>
+              
+              <div className="mt-6 p-4 bg-white rounded-lg">
+                <p className="text-gray-600 italic">
+                  Recognizing that each group of elderly participants is unique, we tailor our workshops to their specific needs and prior knowledge, ensuring a supportive and effective learning experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }
