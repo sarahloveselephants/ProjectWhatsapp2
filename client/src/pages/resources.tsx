@@ -1,29 +1,68 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Book } from "lucide-react";
 import { useLocation } from "wouter";
 
-const documentResources = [
+const teachingSlides = [
   {
-    title: "Project WhatsApp Guide",
+    title: "English Teaching Slides",
     type: "PDF",
-    description: "Comprehensive guide about our WhatsApp solutions",
-    path: "/docs/whatsapp-guide.pdf",
+    description: "WhatsApp teaching materials in English",
+    path: "/docs/english-slides.pdf",
     icon: FileText
   },
   {
-    title: "Integration Manual",
+    title: "Chinese Teaching Slides",
     type: "PDF",
-    description: "Technical documentation for WhatsApp integration",
-    path: "/docs/integration-manual.pdf",
+    description: "WhatsApp teaching materials in Chinese",
+    path: "/docs/chinese-slides.pdf",
+    icon: FileText
+  },
+  {
+    title: "Bilingual Teaching Slides",
+    type: "PDF",
+    description: "WhatsApp teaching materials in English and Chinese",
+    path: "/docs/bilingual-slides.pdf",
+    icon: FileText
+  },
+  {
+    title: "Apple Notes Teaching Slides",
+    type: "PDF",
+    description: "Guide for using Apple Notes",
+    path: "/docs/apple-notes.pdf",
+    icon: FileText
+  }
+];
+
+const guidebooks = [
+  {
+    title: "English Apple Guidebook",
+    type: "PDF",
+    description: "WhatsApp guide for Apple devices in English",
+    path: "/docs/english-apple-guide.pdf",
     icon: Book
   },
   {
-    title: "Feature Overview",
+    title: "English Android Guidebook",
     type: "PDF",
-    description: "Overview of all available features",
-    path: "/docs/feature-overview.pdf",
-    icon: FileText
+    description: "WhatsApp guide for Android devices in English",
+    path: "/docs/english-android-guide.pdf",
+    icon: Book
+  },
+  {
+    title: "Bilingual Apple Guidebook",
+    type: "PDF",
+    description: "WhatsApp guide for Apple devices in English and Chinese",
+    path: "/docs/bilingual-apple-guide.pdf",
+    icon: Book
+  },
+  {
+    title: "Bilingual Android Guidebook",
+    type: "PDF",
+    description: "WhatsApp guide for Android devices in English and Chinese",
+    path: "/docs/bilingual-android-guide.pdf",
+    icon: Book
   }
 ];
 
@@ -32,10 +71,17 @@ export default function Resources() {
   const searchParams = new URLSearchParams(location.split('?')[1]);
   const searchQuery = searchParams.get('search')?.toLowerCase() || '';
 
-  const filteredDocs = documentResources.filter(doc => 
+  const filteredSlides = teachingSlides.filter(slide => 
     searchQuery ? 
-      doc.title.toLowerCase().includes(searchQuery) || 
-      doc.description.toLowerCase().includes(searchQuery)
+      slide.title.toLowerCase().includes(searchQuery) || 
+      slide.description.toLowerCase().includes(searchQuery)
+    : true
+  );
+
+  const filteredGuidebooks = guidebooks.filter(guide => 
+    searchQuery ? 
+      guide.title.toLowerCase().includes(searchQuery) || 
+      guide.description.toLowerCase().includes(searchQuery)
     : true
   );
 
@@ -46,30 +92,30 @@ export default function Resources() {
           Resources
         </h1>
         <p className="text-gray-500 md:text-xl dark:text-gray-400">
-          Helpful guides and documentation to get the most out of our platform
+          Explore our collection of free to download teaching materials, step-by-step guides, and slides designed to help seniors navigate WhatsApp with ease
         </p>
       </div>
 
-      {/* PDF Documents Section */}
+      {/* Teaching Slides Section */}
       <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-6">Documentation</h2>
+        <h2 className="text-2xl font-semibold mb-6">Teaching Slides</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {filteredDocs.map((doc) => (
-            <Card key={doc.title} className="hover:shadow-lg transition-shadow">
+          {filteredSlides.map((slide) => (
+            <Card key={slide.title} className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
-                  <doc.icon className="h-8 w-8 text-[#1E4620]" />
+                  <slide.icon className="h-8 w-8 text-[#1E4620]" />
                   <div className="flex-1">
-                    <h3 className="font-semibold mb-2">{doc.title}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">{doc.description}</p>
+                    <h3 className="font-semibold mb-2">{slide.title}</h3>
+                    <p className="text-sm text-muted-foreground mb-4">{slide.description}</p>
                     <a
-                      href={doc.path}
+                      href={slide.path}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block"
                     >
                       <Button variant="outline" size="sm">
-                        View {doc.type}
+                        View {slide.type}
                       </Button>
                     </a>
                   </div>
@@ -78,11 +124,36 @@ export default function Resources() {
             </Card>
           ))}
         </div>
-        {filteredDocs.length === 0 && (
-          <p className="text-center text-muted-foreground mt-8">
-            No resources found matching your search.
-          </p>
-        )}
+      </div>
+
+      {/* WhatsApp Guidebooks Section */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-semibold mb-6">WhatsApp Guidebooks</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {filteredGuidebooks.map((guide) => (
+            <Card key={guide.title} className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <guide.icon className="h-8 w-8 text-[#1E4620]" />
+                  <div className="flex-1">
+                    <h3 className="font-semibold mb-2">{guide.title}</h3>
+                    <p className="text-sm text-muted-foreground mb-4">{guide.description}</p>
+                    <a
+                      href={guide.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                    >
+                      <Button variant="outline" size="sm">
+                        View {guide.type}
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );

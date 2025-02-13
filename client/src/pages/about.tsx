@@ -9,7 +9,7 @@ export default function About() {
         <h1 className="text-4xl font-bold tracking-tighter text-[#1E4620] sm:text-5xl">
           Our Work
         </h1>
-        <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+        <p className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto">
           We conduct WhatsApp workshops specifically designed for the elderly, helping them build digital confidence and stay connected in today's fast-paced world. Our sessions range from teaching simple functions like sending messages, making video calls, and sharing photos to more advanced features such as location sharing, creating groups, and exploring WhatsApp Channels.
         </p>
       </div>
