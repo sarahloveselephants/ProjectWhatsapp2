@@ -11,15 +11,15 @@ export default function Home() {
         <div className="container">
           <div className="space-y-12">
             {/* Mission and Vision */}
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <div className="space-y-8">
-                <div>
+            <div className="max-w-6xl mx-auto mb-16">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                   <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Vision</h2>
                   <p className="text-gray-600 leading-relaxed">
                     To create an inclusive digital community where every elderly individual feels empowered, connected, and confident in using technology to enhance their lives and strengthen their relationships
                   </p>
                 </div>
-                <div>
+                <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                   <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Mission</h2>
                   <p className="text-gray-600 leading-relaxed text-xl font-medium">
                     Empowering Seniors, one message at a time
