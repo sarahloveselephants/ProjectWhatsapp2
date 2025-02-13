@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="py-24 bg-[#FDFBF7]">
         <div className="container">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl ml-20">
             <h1 className="text-6xl font-medium mb-8">
               About Our Project
             </h1>
@@ -32,7 +32,7 @@ export default function Home() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-medium mb-6">Resources</h2>
-            <p className="text-base mb-8">
+            <p className="text-sm mb-8">
               We provide free teaching slides on WhatsApp in English, Chinese, and bilingual formats, along with Apple Notes and Settings teaching slides in English. Additionally, we offer a comprehensive WhatsApp guidebook for both Apple and Android devices.
             </p>
             <Link href="/resources">
