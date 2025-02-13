@@ -14,27 +14,6 @@ export default function About() {
         </p>
       </div>
 
-      {/* Timeline Section */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold text-[#1E4620] mb-8">Our Journey</h2>
-        <div className="space-y-8">
-          <div className="flex gap-4">
-            <div className="w-24 text-[#1E4620] font-semibold">April 2024</div>
-            <div className="flex-1 pb-8 border-l-2 border-[#1E4620] pl-8">
-              <h3 className="font-semibold mb-2">Project Launch</h3>
-              <p className="text-gray-600">Started the VIA WhatsApp Project at Methodist Girls' School (Secondary)</p>
-            </div>
-          </div>
-          <div className="flex gap-4">
-            <div className="w-24 text-[#1E4620] font-semibold">2024</div>
-            <div className="flex-1 pb-8 border-l-2 border-[#1E4620] pl-8">
-              <h3 className="font-semibold mb-2">Expansion Phase</h3>
-              <p className="text-gray-600">Continued project development through junior college transition</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Who Are We Section */}
       <Card className="mb-16 border-none shadow-lg bg-[#FDFBF7]">
         <CardContent className="p-8">
@@ -94,7 +73,7 @@ export default function About() {
       </Card>
 
       {/* Beneficiaries Section */}
-      <Card className="border-none shadow-lg bg-[#FDFBF7]">
+      <Card className="mb-16 border-none shadow-lg bg-[#FDFBF7]">
         <CardContent className="p-8">
           <div className="flex items-center gap-2 mb-6">
             <span className="text-[#1E4620] text-2xl font-semibold">03</span>
@@ -105,6 +84,62 @@ export default function About() {
           </p>
           <div className="bg-gray-100 rounded-lg p-4 text-center">
             [Beneficiaries Photos Space]
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Timeline Section */}
+      <Card className="border-none shadow-lg bg-[#FDFBF7]">
+        <CardContent className="p-8">
+          <div className="flex items-center gap-2 mb-6">
+            <span className="text-[#1E4620] text-2xl font-semibold">04</span>
+            <h2 className="text-3xl font-bold text-[#1E4620]">Our Journey</h2>
+          </div>
+          <div className="space-y-6">
+            <div className="flex gap-4">
+              <div className="w-32 text-[#1E4620] font-semibold">February 2024</div>
+              <div className="flex-1 pb-6 border-l-2 border-[#1E4620] pl-6">
+                <p className="text-gray-600">Launch of project</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-32 text-[#1E4620] font-semibold">April 2024</div>
+              <div className="flex-1 pb-6 border-l-2 border-[#1E4620] pl-6">
+                <p className="text-gray-600">First 2 sessions with Ang Mo Kio lion befrienders</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-32 text-[#1E4620] font-semibold">June 2024</div>
+              <div className="flex-1 pb-6 border-l-2 border-[#1E4620] pl-6">
+                <p className="text-gray-600">Created our first draft of the whatsapp guidebook</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-32 text-[#1E4620] font-semibold">July 2024</div>
+              <div className="flex-1 pb-6 border-l-2 border-[#1E4620] pl-6">
+                <p className="text-gray-600">Completed second draft of guidebook in canva</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-32 text-[#1E4620] font-semibold">August 2024</div>
+              <div className="flex-1 pb-6 border-l-2 border-[#1E4620] pl-6">
+                <ul className="space-y-4 text-gray-600">
+                  <li>First time recruiting volunteers for the 4 upcoming sessions</li>
+                  <li>Worked with Apple to refine our content for our Apple Notes workshop</li>
+                  <li>Worked with IMDA to try out bringing anti scams into our sessions</li>
+                  <li>Completed the Chinese version of our slides</li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-32 text-[#1E4620] font-semibold">January 2025</div>
+              <div className="flex-1 pb-6 border-l-2 border-[#1E4620] pl-6">
+                <ul className="space-y-4 text-gray-600">
+                  <li>Completed the bilingual version of our WhatsApp teaching slides and guidebook</li>
+                  <li>First off campus session outside of the MGS IGL centre at Tung Ling Community Services and Church of Singapore</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </CardContent>
       </Card>
