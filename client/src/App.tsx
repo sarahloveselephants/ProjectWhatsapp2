@@ -15,7 +15,7 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/resources" component={Resources} />
-        <Route path="/about" component={About} />
+        <Route path="/work" component={About} />
         <Route component={NotFound} />
       </Switch>
     </div>
