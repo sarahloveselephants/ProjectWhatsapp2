@@ -11,15 +11,15 @@ export default function Home() {
         <div className="container">
           <div className="space-y-12">
             {/* Mission and Vision */}
-            <div className="container max-w-6xl mx-auto mb-24">
-              <div className="grid md:grid-cols-2 gap-8 justify-center">
-                <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow mx-auto w-full">
+            <div className="max-w-6xl mx-auto mb-16">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                   <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Vision</h2>
                   <p className="text-gray-600 leading-relaxed">
                     To create an inclusive digital community where every elderly individual feels empowered, connected, and confident in using technology to enhance their lives and strengthen their relationships
                   </p>
                 </div>
-                <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow mx-auto w-full">
+                <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                   <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Mission</h2>
                   <p className="text-gray-600 leading-relaxed text-xl font-medium">
                     Empowering Seniors, one message at a time
@@ -29,20 +29,16 @@ export default function Home() {
             </div>
 
             {/* Problem Statement */}
-            <div className="bg-[#F0F5F1] py-16 mb-24">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-4xl font-bold text-[#1E4620] mb-4">The Problem</h2>
-                <p className="text-lg text-gray-600">
-                  In today's technologically advanced world, many elderly persons are increasingly being left behind and
-                  isolated as they do not have the necessary digital literacy and tools to communicate, get access to critical services and stay socially engaged in their respective communities
-                </p>
-              </div>
+            <div className="max-w-4xl mx-auto text-center mb-16">
+              <h2 className="text-4xl font-bold text-[#1E4620] mb-4">The Problem</h2>
+              <p className="text-lg text-gray-600">
+                In today's technologically advanced world, many elderly persons are increasingly being left behind and
+                isolated as they do not have the necessary digital literacy and tools to communicate, get access to critical services and stay socially engaged in their respective communities
+              </p>
             </div>
 
             {/* About Project */}
-            <div className="bg-white py-16">
-              <div className="container">
-                <div className="flex gap-12 pl-8">
+            <div className="flex gap-12 pl-8">
               <div className="w-1/3">
                 <h1 className="text-6xl font-medium mb-8">
                   About Our Project
