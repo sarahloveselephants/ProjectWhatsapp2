@@ -10,7 +10,7 @@ export default function About() {
           Our Work
         </h1>
         <p className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto">
-          We conduct WhatsApp workshops specifically designed for the elderly, helping them build digital confidence and stay connected in today's fast-paced world. Our sessions range from teaching simple functions like sending messages, making video calls, and sharing photos to more advanced features such as location sharing, creating groups, and exploring WhatsApp Channels.
+          Learn more about who we are, what we do and our journey so far!
         </p>
       </div>
 
@@ -29,6 +29,26 @@ export default function About() {
             </div>
             <div className="w-full md:w-1/2 bg-gray-100 rounded-lg p-4">
               [Photo Space]
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Mission and Vision Section */}
+      <Card className="mb-16 border-none shadow-lg bg-[#FDFBF7]">
+        <CardContent className="p-8">
+          <div className="space-y-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-[#1E4620] mb-4">Vision</h2>
+              <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                To create an inclusive digital community where every elderly individual feels empowered, connected, and confident in using technology to enhance their lives and strengthen their relationships
+              </p>
+            </div>
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-[#1E4620] mb-4">Mission</h2>
+              <p className="text-gray-600 leading-relaxed text-xl font-medium">
+                Empowering Seniors, one message at a time
+              </p>
             </div>
           </div>
         </CardContent>
@@ -80,7 +100,7 @@ export default function About() {
             <h2 className="text-3xl font-bold text-[#1E4620]">Beneficiaries</h2>
           </div>
           <p className="text-gray-600 mb-6">
-            Our beneficiaries include a diverse range of community organizations that support our vision of empowering seniors through digital literacy. These include Covenant Community Methodist Church, Church of Singapore (Marine Parade), Lions Befrienders Service Association (Singapore), TOUCH Community Services, and Tung Ling Community Services.
+            We are immensely grateful to all our beneficiaries that support our vision of empowering seniors through digital literacy. These include Covenant Community Methodist Church, Church of Singapore (Marine Parade), Lions Befrienders Service Association (Singapore), TOUCH Community Services, and Tung Ling Community Services.
           </p>
           <div className="bg-gray-100 rounded-lg p-4 text-center">
             [Beneficiaries Photos Space]
