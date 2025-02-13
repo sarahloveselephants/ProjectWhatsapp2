@@ -80,10 +80,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-8">
-            <p className="text-lg text-gray-600">Contact us at projectwhatsapp@gmail.com to learn more!</p>
-          </div>
-          <div className="text-center mt-12">
-            <p className="text-lg">Contact us at projectwhatsapp@gmail.com</p>
+            <p className="text-lg text-[#0E3410]">Contact us at projectwhatsapp@gmail.com to learn more!</p>
           </div>
         </div>
       </section>
