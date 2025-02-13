@@ -9,13 +9,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="py-24 bg-[#FDFBF7]">
         <div className="container">
-          <div className="flex gap-12">
+          <div className="flex gap-12 pl-8">
             <div className="w-1/3">
               <h1 className="text-6xl font-medium mb-8">
                 About Our Project
               </h1>
               <h2 className="text-3xl">
-                Our Mission
+                Our Mission and Vision
               </h2>
             </div>
             <div className="w-2/3">
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-medium mb-6">Resources</h2>
             <p className="text-base mb-8">
-              We provide free teaching slides on WhatsApp in English, Chinese, and bilingual formats, along with Apple Notes and Settings teaching slides in English. Additionally, we offer a comprehensive WhatsApp guidebook for both Apple and Android devices.
+              We provide comprehensive teaching materials, step-by-step guides, and bilingual slides to support digital literacy workshops for seniors. Our resources are free to download and easy to use, enabling individuals and organizations to conduct their own WhatsApp training sessions with confidence.
             </p>
             <Link href="/resources">
               <Button className="bg-[#0E3410] hover:bg-[#0E3410]/90 text-white">
@@ -60,24 +60,27 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
-            <div className="text-center p-8">
-              <h3 className="text-2xl font-medium mb-4">Volunteer</h3>
-              <p>
+            <div className="text-center p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-medium mb-4 text-[#0E3410]">Volunteer</h3>
+              <p className="text-gray-600">
                 Assist during our workshops to guide seniors as they learn WhatsApp features and build digital confidence.
               </p>
             </div>
-            <div className="text-center p-8">
-              <h3 className="text-2xl font-medium mb-4">Collaborate</h3>
-              <p>
+            <div className="text-center p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-medium mb-4 text-[#0E3410]">Collaborate</h3>
+              <p className="text-gray-600">
                 Partner with us to expand our reach and help bridge the digital divide in your community.
               </p>
             </div>
-            <div className="text-center p-8">
-              <h3 className="text-2xl font-medium mb-4">Sign Up</h3>
-              <p>
+            <div className="text-center p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-medium mb-4 text-[#0E3410]">Sign Up</h3>
+              <p className="text-gray-600">
                 Sign up your community group or organization for a tailored workshop to empower members with essential digital skills.
               </p>
             </div>
+          </div>
+          <div className="text-center mt-8">
+            <p className="text-lg text-gray-600">Contact us at projectwhatsapp@gmail.com to learn more!</p>
           </div>
           <div className="text-center mt-12">
             <p className="text-lg">Contact us at projectwhatsapp@gmail.com</p>
