@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -8,11 +7,11 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-24 bg-[#FDFBF7]">
-        <div className="container">
+        <div className="container mx-auto px-4">
           <div className="space-y-12">
             {/* Mission and Vision */}
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <div className="space-y-8">
+            <div className="max-w-6xl mx-auto mb-24">
+              <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Vision</h2>
                   <p className="text-gray-600 leading-relaxed">
@@ -64,7 +63,7 @@ export default function Home() {
 
       {/* Resources Section */}
       <section className="py-24">
-        <div className="container">
+        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-medium mb-6">Resources</h2>
             <p className="text-base mb-8">
@@ -82,7 +81,7 @@ export default function Home() {
 
       {/* Get Involved Section */}
       <section className="py-24 bg-[#FDFBF7]">
-        <div className="container">
+        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-medium mb-6">Get Involved</h2>
             <p className="text-lg">
