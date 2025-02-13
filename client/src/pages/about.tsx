@@ -34,25 +34,7 @@ export default function About() {
         </CardContent>
       </Card>
 
-      {/* Mission and Vision Section */}
-      <Card className="mb-16 border-none shadow-lg bg-[#FDFBF7]">
-        <CardContent className="p-8">
-          <div className="space-y-8">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold text-[#1E4620] mb-4">Vision</h2>
-              <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                To create an inclusive digital community where every elderly individual feels empowered, connected, and confident in using technology to enhance their lives and strengthen their relationships
-              </p>
-            </div>
-            <div className="text-center">
-              <h2 className="text-3xl font-bold text-[#1E4620] mb-4">Mission</h2>
-              <p className="text-gray-600 leading-relaxed text-xl font-medium">
-                Empowering Seniors, one message at a time
-              </p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+      
 
       {/* Workshop Details Section */}
       <Card className="mb-16 border-none shadow-lg bg-[#FDFBF7]">

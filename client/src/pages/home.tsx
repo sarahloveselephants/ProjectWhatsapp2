@@ -9,24 +9,54 @@ export default function Home() {
       {/* Hero Section */}
       <section className="py-24 bg-[#FDFBF7]">
         <div className="container">
-          <div className="flex gap-12 pl-8">
-            <div className="w-1/3">
-              <h1 className="text-6xl font-medium mb-8">
-                About Our Project
-              </h1>
-              <h2 className="text-3xl">
-                Our Mission and Vision
-              </h2>
+          <div className="space-y-12">
+            {/* Mission and Vision */}
+            <div className="max-w-4xl mx-auto text-center mb-16">
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Vision</h2>
+                  <p className="text-gray-600 leading-relaxed">
+                    To create an inclusive digital community where every elderly individual feels empowered, connected, and confident in using technology to enhance their lives and strengthen their relationships
+                  </p>
+                </div>
+                <div>
+                  <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Mission</h2>
+                  <p className="text-gray-600 leading-relaxed text-xl font-medium">
+                    Empowering Seniors, one message at a time
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="w-2/3">
-              <p className="text-lg mb-8">
-                Project Whatsapp is a youth-led community project dedicated to improving digital literacy among seniors by teaching them how to effectively use WhatsApp. Through interactive workshops and customized materials, we empower seniors to stay connected with their families, friends, and communities.
+
+            {/* Problem Statement */}
+            <div className="max-w-4xl mx-auto text-center mb-16">
+              <h2 className="text-4xl font-bold text-[#1E4620] mb-4">The Problem</h2>
+              <p className="text-lg text-gray-600">
+                In today's technologically advanced world, many elderly persons are increasingly being left behind and
+                isolated as they do not have the necessary digital literacy and tools to communicate, get access to critical services and stay socially engaged in their respective communities
               </p>
-              <Link href="/work">
-                <Button className="bg-[#0E3410] hover:bg-[#0E3410]/90 text-white">
-                  Learn More
-                </Button>
-              </Link>
+            </div>
+
+            {/* About Project */}
+            <div className="flex gap-12 pl-8">
+              <div className="w-1/3">
+                <h1 className="text-6xl font-medium mb-8">
+                  About Our Project
+                </h1>
+                <h2 className="text-3xl">
+                  Our Mission and Vision
+                </h2>
+              </div>
+              <div className="w-2/3">
+                <p className="text-lg mb-8">
+                  Project Whatsapp is a youth-led community project dedicated to improving digital literacy among seniors by teaching them how to effectively use WhatsApp. Through interactive workshops and customized materials, we empower seniors to stay connected with their families, friends, and communities.
+                </p>
+                <Link href="/work">
+                  <Button className="bg-[#0E3410] hover:bg-[#0E3410]/90 text-white">
+                    Learn More
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
