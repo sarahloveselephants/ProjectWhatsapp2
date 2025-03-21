@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
@@ -34,7 +33,7 @@ export default function About() {
         </CardContent>
       </Card>
 
-      
+
 
       {/* Workshop Details Section */}
       <Card className="mb-16 border-none shadow-lg bg-[#FDFBF7]">
@@ -43,14 +42,14 @@ export default function About() {
             <span className="text-[#1E4620] text-2xl font-semibold">02</span>
             <h2 className="text-3xl font-bold text-[#1E4620]">Workshop details</h2>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-[#1E4620] mb-2">Duration</h3>
                 <p className="text-gray-600">1-2 hours depending on the group's needs.</p>
               </div>
-              
+
               <div>
                 <h3 className="font-semibold text-[#1E4620] mb-2">Content</h3>
                 <ul className="space-y-2 text-gray-600">
@@ -60,13 +59,13 @@ export default function About() {
                   <li>• We will stay as updated as possible with whatsapp latest features</li>
                 </ul>
               </div>
-              
+
               <div>
                 <h3 className="font-semibold text-[#1E4620] mb-2">Dates</h3>
                 <p className="text-gray-600">We connect with our beneficiary and select the best date for both parties</p>
               </div>
             </div>
-            
+
             <div className="bg-gray-100 rounded-lg p-4 text-center">
               [Workshop Photos Space]
             </div>
