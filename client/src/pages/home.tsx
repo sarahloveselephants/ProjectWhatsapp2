@@ -14,7 +14,7 @@ export default function Home() {
               <h1 className="text-6xl font-bold text-[#1E4620] mb-4">
                 About Our Project
               </h1>
-              <h2 className="text-3xl text-[#1E4620]">Our Mission and Vision</h2>
+              <h2 className="text-3xl text-[#1E4620] mt-8">Our Mission and Vision</h2>
             </div>
             <div className="w-1/2">
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Get Involved Section */}
-      <section id="get-involved" className="py-24 bg-[#FDFBF7]">
+      <section id="get-involved" className="py-24 bg-[#FDFBF7] w-full">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl font-bold text-[#1E4620] mb-6">Get Involved</h2>
