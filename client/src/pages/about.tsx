@@ -36,7 +36,7 @@ export default function About() {
 
 
       {/* Workshop Details Section */}
-      <Card className="mb-16 border-none shadow-lg bg-[#FDFBF7]">
+      <Card id="workshop" className="mb-16 border-none shadow-lg bg-[#FDFBF7]">
         <CardContent className="p-8">
           <div className="flex items-center gap-2 mb-6">
             <span className="text-[#1E4620] text-2xl font-semibold">02</span>
@@ -93,7 +93,7 @@ export default function About() {
       {/* Timeline Section */}
       <Card className="border-none shadow-lg bg-[#FDFBF7]">
         <CardContent className="p-8">
-          <div className="flex items-center gap-2 mb-6">
+          <div id="journey" className="flex items-center gap-2 mb-6">
             <span className="text-[#1E4620] text-2xl font-semibold">04</span>
             <h2 className="text-3xl font-bold text-[#1E4620]">Our Journey</h2>
           </div>

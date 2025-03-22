@@ -33,13 +33,13 @@ export default function Home() {
       {/* Mission and Vision */}
       <div className="max-w-6xl mx-auto px-6 mb-16">
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div id="vision" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Vision</h2>
             <p className="text-gray-600 leading-relaxed">
               To create an inclusive digital community where every elderly individual feels empowered, connected, and confident in using technology to enhance their lives and strengthen their relationships.
             </p>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div id="mission" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Mission</h2>
             <p className="text-gray-600 leading-relaxed">Empowering Seniors, one message at a time.</p>
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Get Involved Section */}
-      <section className="py-24 bg-[#FDFBF7]">
+      <section id="get-involved" className="py-24 bg-[#FDFBF7]">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl font-bold text-[#1E4620] mb-6">Get Involved</h2>

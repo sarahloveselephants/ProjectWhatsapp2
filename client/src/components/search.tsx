@@ -10,12 +10,40 @@ export default function Search() {
     e.preventDefault();
     const searchTerm = (e.currentTarget.elements.namedItem('search') as HTMLInputElement).value.toLowerCase();
     
-    if (searchTerm.includes('work')) {
-      setLocation('/work');
-    } else if (searchTerm.includes('resource')) {
-      setLocation('/resources');
-    } else if (searchTerm.includes('home')) {
-      setLocation('/');
+    // Search mappings
+    const searchMap: Record<string, { path: string; hash?: string }> = {
+      'work': { path: '/work' },
+      'resource': { path: '/resources' },
+      'home': { path: '/' },
+      'slides': { path: '/resources' },
+      'guidebook': { path: '/resources' },
+      'apple': { path: '/resources' },
+      'android': { path: '/resources' },
+      'mission': { path: '/', hash: '#mission' },
+      'vision': { path: '/', hash: '#vision' },
+      'signup': { path: '/', hash: '#get-involved' },
+      'sign up': { path: '/', hash: '#get-involved' },
+      'collaborate': { path: '/', hash: '#get-involved' },
+      'contact': { path: '/', hash: '#get-involved' },
+      'journey': { path: '/work', hash: '#journey' },
+      'workshop': { path: '/work', hash: '#workshop' },
+      'workshop details': { path: '/work', hash: '#workshop' }
+    };
+
+    // Find matching search term
+    const match = Object.entries(searchMap).find(([key]) => 
+      searchTerm.includes(key)
+    );
+
+    if (match) {
+      const [, { path, hash }] = match;
+      setLocation(path);
+      if (hash) {
+        setTimeout(() => {
+          const element = document.querySelector(hash);
+          element?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
     }
   };
 
