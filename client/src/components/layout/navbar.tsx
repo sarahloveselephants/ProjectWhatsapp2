@@ -13,8 +13,8 @@ export default function Navbar() {
   const [location] = useLocation();
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-[#EDEDED] bg-white">
-      <div className="container flex h-16 items-center justify-between">
+    <nav className="fixed top-0 z-50 w-full border-b border-[#EDEDED] bg-white">
+      <div className="container max-w-7xl mx-auto flex h-16 items-center justify-between px-6">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center gap-2">
             <SiWhatsapp className="h-6 w-6 text-[#25D366]" />
