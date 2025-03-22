@@ -27,7 +27,7 @@ export default function About() {
               </p>
             </div>
             <div className="w-full md:w-1/2 h-[300px]">
-              <img src="/attached_assets/Intro.jpg" alt="Introduction" className="w-full h-full object-cover rounded-lg shadow-md" />
+              <img src="/attached_assets/Screenshot 2025-02-13 at 9.30.45 PM.png" alt="Introduction" className="w-full h-full object-cover rounded-lg shadow-md" />
             </div>
           </div>
         </CardContent>
@@ -67,7 +67,7 @@ export default function About() {
             </div>
 
             <div className="rounded-lg overflow-hidden h-[400px]">
-              <img src="/attached_assets/workshop.jpg" alt="Workshop Session" className="w-full h-full object-cover shadow-md" />
+              <img src="/attached_assets/Screenshot 2025-02-13 at 9.31.03 PM.png" alt="Workshop Session" className="w-full h-full object-cover shadow-md" />
             </div>
           </div>
         </CardContent>
@@ -84,8 +84,8 @@ export default function About() {
             We are immensely grateful to all our beneficiaries that support our vision of empowering seniors through digital literacy. These include Covenant Community Methodist Church, Church of Singapore (Marine Parade), Lions Befrienders Service Association (Singapore), TOUCH Community Services, and Tung Ling Community Services.
           </p>
           <div className="grid grid-cols-2 gap-4 h-[300px]">
-            <img src="/attached_assets/Bene.jpg" alt="Beneficiaries 1" className="w-full h-full object-cover rounded-lg shadow-md" />
-            <img src="/attached_assets/Bene2.jpg" alt="Beneficiaries 2" className="w-full h-full object-cover rounded-lg shadow-md" />
+            <img src="/attached_assets/Screenshot 2025-02-13 at 9.33.25 PM.png" alt="Beneficiaries 1" className="w-full h-full object-cover rounded-lg shadow-md" />
+            <img src="/attached_assets/Screenshot 2025-02-13 at 9.39.56 PM.png" alt="Beneficiaries 2" className="w-full h-full object-cover rounded-lg shadow-md" />
           </div>
         </CardContent>
       </Card>
