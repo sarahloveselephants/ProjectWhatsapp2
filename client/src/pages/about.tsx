@@ -1,3 +1,12 @@
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
@@ -26,8 +35,19 @@ export default function About() {
                 We are Nicole and Sarah, the founders of the VIA WhatsApp Project. We started this initiative in April 2024 while we were students at Methodist Girls' School (Secondary) MGS. After graduating in 2024, we both moved on to junior college and are committed to continuing this meaningful project. We are fortunate to still have the support of Mr. Wang, the teacher in charge of the Intergenerational Learning Centre (IGL) at MGS, who has been instrumental in guiding us along the way.
               </p>
             </div>
-            <div className="w-full md:w-1/2 h-[300px]">
-              <img src="/attached_assets/Screenshot 2025-02-13 at 9.30.45 PM.png" alt="Introduction" className="w-full h-full object-cover rounded-lg shadow-md" />
+            <div className="w-full md:w-1/2">
+              <Carousel className="h-[300px]">
+                <CarouselContent>
+                  <CarouselItem>
+                    <img src="/attached_assets/Screenshot 2025-02-08 at 6.11.42 PM.png" alt="Introduction 1" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src="/attached_assets/Screenshot 2025-02-08 at 6.12.02 PM.png" alt="Introduction 2" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
             </div>
           </div>
         </CardContent>
@@ -66,8 +86,25 @@ export default function About() {
               </div>
             </div>
 
-            <div className="rounded-lg overflow-hidden h-[400px]">
-              <img src="/attached_assets/Screenshot 2025-02-13 at 9.31.03 PM.png" alt="Workshop Session" className="w-full h-full object-cover shadow-md" />
+            <div className="rounded-lg overflow-hidden">
+              <Carousel className="h-[400px]">
+                <CarouselContent>
+                  <CarouselItem>
+                    <img src="/attached_assets/Screenshot 2025-02-08 at 6.29.50 PM.png" alt="Workshop 1" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src="/attached_assets/Screenshot 2025-02-13 at 9.31.03 PM.png" alt="Workshop 2" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src="/attached_assets/Screenshot 2025-02-13 at 9.33.25 PM.png" alt="Workshop 3" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src="/attached_assets/Screenshot 2025-02-13 at 9.39.56 PM.png" alt="Workshop 4" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
             </div>
           </div>
         </CardContent>
@@ -83,9 +120,25 @@ export default function About() {
           <p className="text-gray-600 mb-6">
             We are immensely grateful to all our beneficiaries that support our vision of empowering seniors through digital literacy. These include Covenant Community Methodist Church, Church of Singapore (Marine Parade), Lions Befrienders Service Association (Singapore), TOUCH Community Services, and Tung Ling Community Services.
           </p>
-          <div className="grid grid-cols-2 gap-4 h-[300px]">
-            <img src="/attached_assets/Screenshot 2025-02-13 at 9.33.25 PM.png" alt="Beneficiaries 1" className="w-full h-full object-cover rounded-lg shadow-md" />
-            <img src="/attached_assets/Screenshot 2025-02-13 at 9.39.56 PM.png" alt="Beneficiaries 2" className="w-full h-full object-cover rounded-lg shadow-md" />
+          <div className="h-[300px]">
+            <Carousel>
+              <CarouselContent>
+                <CarouselItem className="basis-1/2">
+                  <img src="/attached_assets/Screenshot 2025-02-08 at 6.11.42 PM.png" alt="Beneficiaries 1" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                </CarouselItem>
+                <CarouselItem className="basis-1/2">
+                  <img src="/attached_assets/Screenshot 2025-02-08 at 6.12.02 PM.png" alt="Beneficiaries 2" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                </CarouselItem>
+                <CarouselItem className="basis-1/2">
+                  <img src="/attached_assets/Screenshot 2025-02-13 at 9.33.25 PM.png" alt="Beneficiaries 3" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                </CarouselItem>
+                <CarouselItem className="basis-1/2">
+                  <img src="/attached_assets/Screenshot 2025-02-13 at 9.39.56 PM.png" alt="Beneficiaries 4" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </CardContent>
       </Card>
