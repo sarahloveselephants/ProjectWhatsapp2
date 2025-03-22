@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { SiWhatsapp } from "react-icons/si";
-import { Search } from "lucide-react";
+import Search from "@/components/search";
 import { cn } from "@/lib/utils";
 
 const navigation = [
@@ -35,14 +35,7 @@ export default function Navbar() {
             ))}
           </div>
         </div>
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
-          <input 
-            type="text"
-            placeholder="Search..."
-            className="h-9 rounded-md pl-9 pr-4 text-sm bg-gray-50 border-none focus:ring-1 focus:ring-gray-200"
-          />
-        </div>
+        <Search />
       </div>
     </nav>
   );
