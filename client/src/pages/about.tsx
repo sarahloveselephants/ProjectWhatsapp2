@@ -38,10 +38,10 @@ export default function About() {
               <Carousel className="h-[300px]">
                 <CarouselContent>
                   <CarouselItem>
-                    <img src="/images/Screenshot 2025-02-08 at 6.11.42 PM.png" alt="Introduction 1" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                    <img src="/attached_assets/Screenshot 2025-02-08 at 6.11.42 PM.png" alt="Introduction 1" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src="/images/Screenshot 2025-02-08 at 6.12.02 PM.png" alt="Introduction 2" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                    <img src="/attached_assets/Screenshot 2025-02-08 at 6.12.02 PM.png" alt="Introduction 2" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
                   </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
@@ -89,16 +89,16 @@ export default function About() {
               <Carousel className="h-[400px]">
                 <CarouselContent>
                   <CarouselItem>
-                    <img src="/images/Screenshot 2025-02-08 at 6.29.50 PM.png" alt="Workshop 1" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
+                    <img src="/attached_assets/Screenshot 2025-02-08 at 6.29.50 PM.png" alt="Workshop 1" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src="/images/Screenshot 2025-02-13 at 9.31.03 PM.png" alt="Workshop 2" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
+                    <img src="/attached_assets/Screenshot 2025-02-13 at 9.31.03 PM.png" alt="Workshop 2" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src="/images/Screenshot 2025-02-13 at 9.33.25 PM.png" alt="Workshop 3" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
+                    <img src="/attached_assets/Screenshot 2025-02-13 at 9.33.25 PM.png" alt="Workshop 3" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src="/images/Screenshot 2025-02-13 at 9.39.56 PM.png" alt="Workshop 4" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
+                    <img src="/attached_assets/Screenshot 2025-02-13 at 9.39.56 PM.png" alt="Workshop 4" className="w-full h-[400px] object-cover shadow-md rounded-lg" />
                   </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
@@ -123,16 +123,16 @@ export default function About() {
             <Carousel>
               <CarouselContent>
                 <CarouselItem className="basis-1/2">
-                  <img src="/images/Screenshot 2025-02-08 at 6.11.42 PM.png" alt="Beneficiaries 1" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                  <img src="/attached_assets/Screenshot 2025-02-08 at 6.11.42 PM.png" alt="Beneficiaries 1" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
                 </CarouselItem>
                 <CarouselItem className="basis-1/2">
-                  <img src="/images/Screenshot 2025-02-08 at 6.12.02 PM.png" alt="Beneficiaries 2" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                  <img src="/attached_assets/Screenshot 2025-02-08 at 6.12.02 PM.png" alt="Beneficiaries 2" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
                 </CarouselItem>
                 <CarouselItem className="basis-1/2">
-                  <img src="/images/Screenshot 2025-02-13 at 9.33.25 PM.png" alt="Beneficiaries 3" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                  <img src="/attached_assets/Screenshot 2025-02-13 at 9.33.25 PM.png" alt="Beneficiaries 3" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
                 </CarouselItem>
                 <CarouselItem className="basis-1/2">
-                  <img src="/images/Screenshot 2025-02-13 at 9.39.56 PM.png" alt="Beneficiaries 4" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
+                  <img src="/attached_assets/Screenshot 2025-02-13 at 9.39.56 PM.png" alt="Beneficiaries 4" className="w-full h-[300px] object-cover rounded-lg shadow-md" />
                 </CarouselItem>
               </CarouselContent>
               <CarouselPrevious />
