@@ -31,7 +31,7 @@ export default function Home() {
       </section>
 
       {/* Mission and Vision */}
-      <div className="max-w-6xl mx-auto px-6 mb-16 mt-32">
+      <div className="max-w-6xl mx-auto px-6 mb-16 mt-16">
         <div className="grid md:grid-cols-2 gap-8">
           <div id="vision" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Vision</h2>

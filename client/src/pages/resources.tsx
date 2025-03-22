@@ -67,21 +67,21 @@ const guidebooks = [
 
 export default function Resources() {
   return (
-    <div className="container mx-auto py-10 px-6 text-center">
+    <div className="container mx-auto py-10 px-6 text-center bg-[#FDFBF7]">
       <div className="space-y-2 mb-10">
-        <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+        <h1 className="text-3xl font-bold tracking-tighter text-[#1E4620] sm:text-5xl">
           Resources
         </h1>
-        <p className="text-gray-500 md:text-xl dark:text-gray-400">
+        <p className="text-gray-600 md:text-xl">
           Explore our collection of free-to-download teaching materials, step-by-step guides, and slides designed to help seniors navigate WhatsApp with ease.
         </p>
       </div>
 
       <div className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">Teaching Slides</h2>
-        <div className="grid grid-cols-2 gap-0 w-full">
+        <div className="grid grid-cols-2 gap-4 w-full">
           {teachingSlides.map((slide) => (
-            <Card key={slide.title} className="hover:shadow-lg transition-shadow w-full">
+            <Card key={slide.title} className="hover:shadow-lg transition-shadow w-full bg-white">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <slide.icon className="h-8 w-8 text-[#1E4620]" />
