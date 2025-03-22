@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-24 bg-[#FDFBF7]">
+      <section className="py-24 bg-[#FDFBF7] w-screen">
         <div className="container mx-auto px-6">
           <div className="flex gap-12 items-start">
             {/* About Project */}
@@ -31,7 +31,7 @@ export default function Home() {
       </section>
 
       {/* Mission and Vision */}
-      <div className="max-w-6xl mx-auto px-6 mb-16">
+      <div className="max-w-6xl mx-auto px-6 mb-16 mt-32">
         <div className="grid md:grid-cols-2 gap-8">
           <div id="vision" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h2 className="text-4xl font-bold text-[#1E4620] mb-4">Vision</h2>
@@ -55,7 +55,7 @@ export default function Home() {
       </div>
 
       {/* Resources Section */}
-      <section className="py-24">
+      <section className="py-24 bg-[#FDFBF7] w-screen">
         <div className="container mx-auto px-6 text-center max-w-3xl">
           <h2 className="text-4xl font-bold text-[#1E4620] mb-6">Resources</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
