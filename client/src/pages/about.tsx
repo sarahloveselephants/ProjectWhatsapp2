@@ -26,8 +26,8 @@ export default function About() {
                 We are Nicole and Sarah, the founders of the VIA WhatsApp Project. We started this initiative in April 2024 while we were students at Methodist Girls' School (Secondary) MGS. After graduating in 2024, we both moved on to junior college and are committed to continuing this meaningful project. We are fortunate to still have the support of Mr. Wang, the teacher in charge of the Intergenerational Learning Centre (IGL) at MGS, who has been instrumental in guiding us along the way.
               </p>
             </div>
-            <div className="w-full md:w-1/2">
-              <img src="/Intro.jpg" alt="Introduction" className="w-full h-full object-cover rounded-lg" />
+            <div className="w-full md:w-1/2 h-[300px]">
+              <img src="/attached_assets/Intro.jpg" alt="Introduction" className="w-full h-full object-cover rounded-lg shadow-md" />
             </div>
           </div>
         </CardContent>
@@ -66,8 +66,8 @@ export default function About() {
               </div>
             </div>
 
-            <div className="bg-gray-100 rounded-lg p-4 text-center">
-              [Workshop Photos Space]
+            <div className="rounded-lg overflow-hidden h-[400px]">
+              <img src="/attached_assets/workshop.jpg" alt="Workshop Session" className="w-full h-full object-cover shadow-md" />
             </div>
           </div>
         </CardContent>
@@ -83,9 +83,9 @@ export default function About() {
           <p className="text-gray-600 mb-6">
             We are immensely grateful to all our beneficiaries that support our vision of empowering seniors through digital literacy. These include Covenant Community Methodist Church, Church of Singapore (Marine Parade), Lions Befrienders Service Association (Singapore), TOUCH Community Services, and Tung Ling Community Services.
           </p>
-          <div className="grid grid-cols-2 gap-4">
-            <img src="/Bene.jpg" alt="Beneficiaries 1" className="w-full h-full object-cover rounded-lg" />
-            <img src="/Bene2.jpg" alt="Beneficiaries 2" className="w-full h-full object-cover rounded-lg" />
+          <div className="grid grid-cols-2 gap-4 h-[300px]">
+            <img src="/attached_assets/Bene.jpg" alt="Beneficiaries 1" className="w-full h-full object-cover rounded-lg shadow-md" />
+            <img src="/attached_assets/Bene2.jpg" alt="Beneficiaries 2" className="w-full h-full object-cover rounded-lg shadow-md" />
           </div>
         </CardContent>
       </Card>
